@@ -5,7 +5,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_8_1') {
+                withMaven(maven : 'M2_HOME') {
                     sh 'mvn clean compile'
                 }
             }
